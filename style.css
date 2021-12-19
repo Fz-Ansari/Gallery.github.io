@@ -1,0 +1,482 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+header{
+	width: 100%;
+	height: 90vh;
+	background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url("img/banner1.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+nav{
+	width: 100%;
+	height: 80px;
+	background: #fff;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 80px;
+	position: fixed;
+	top: 0;
+	z-index: 111;
+}
+.logo{
+	font-family: sans-serif;
+	font-size: 2.5em;
+}
+
+.logo span{
+	color: #e74c3c;
+}
+
+.menu a{
+	text-decoration: none;
+	padding: 10px 20px;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: black;
+
+}
+.menu a:first-child{
+	color: #e74c3c;
+}
+.menu a:hover{
+	color: #e74c3c;
+}
+.icon i{
+	font-size: 20px;
+}
+
+.icon i:hover{
+	color: #e74c3c;
+}
+.icon a{
+	text-decoration: none;
+	background: #e74c3c;
+	color: #fff;
+	padding: 10px 20px;
+	margin-left: 30px;
+	border-radius: 5px;
+}
+.m-menu{
+	width:40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size:20px;
+	text-shadow: 4px 4px 5px 1.2px black;
+	border-radius: 4px;
+	background:rgba(0, 0, 0, .4);
+	display: none;
+	z-index: 1111;
+}
+.h-text{
+	color: #fff;
+	max-width: 700px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+#camera{
+	font-size: 40px;
+	margin-bottom:10px ;
+
+}
+
+.h-text h1{
+	font-family: sans-serif;
+	font-size: 3em;
+	line-height: 1.5em;
+}
+
+.h-text input{
+	width: 60%;
+	padding: 20px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	border-radius: 8px;
+	/*margin-top: 30px;*/
+}
+.h-text button{
+	width: 30%;
+	padding: 20px;
+	background: #e74c3c;
+	color: #fff;
+	border: none;
+	border-radius:8px;
+	outline: none;
+	font-size: 20px;
+	margin-top: 30px;
+
+}
+
+.filter-gallery{
+	padding: 100px;
+}
+
+.portfolio-menu{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.portfolio-menu ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 20px 0;
+	font-size: 20px;
+	font-family: sans-serif;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: .5s ease;
+	text-align: center;
+}
+
+.portfolio-menu ul li:hover{
+	color: #fff;
+	background: #e74c3c;
+	border-radius: 8px;
+}
+
+li.active{
+	color: #fff;
+	background: #e74c3c;
+	border-radius: 8px;
+}
+
+.portfolio-item{
+	width: 100%;
+}
+
+.portfolio-item .item{
+	width: 360px;
+	height: 360px;
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.portfolio-item .item img{
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+
+}
+
+.member{
+	width: 100%;
+	padding: 20px 100px;
+	font-family: sans-serif;
+}
+
+.member-info{
+	text-align: center;
+}
+
+.member-info h1{
+	font-size: 2.2em;
+}
+
+.member-info h1 span{
+	color: #e74c3c;
+}
+.member-card{
+	text-align: center;
+	padding-top:50px ;
+	width: 50%;
+	margin: auto;
+}
+.member-card p{
+	margin: 20px 0px;
+	line-height: 2em;
+}
+.member-card h2{
+	margin: 20px 0px;
+}
+
+.m-images{
+	width: 100%;
+	display: flex;
+	margin: 20px 0px;
+	overflow: hidden;
+}
+.m-images img{
+	width:200px;
+	cursor: pointer;
+	transition: .4s ease-in-out;
+
+}
+
+.m-images img:hover{
+	transform: scale(1.5);
+}
+
+footer{
+	width: 100%;
+	background: #262626;
+	padding: 50px 100px;
+}
+
+.newsletter{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+	border: 1px solid rgba(255, 255, 255, .2);
+	color: #fff;
+}
+}
+
+.newsletter>div{
+flex-basis:50%;
+}
+.ntext{
+	text-align: right;
+}
+.newsletter h2{
+	font-size: 2em;
+	font-family: sans-serif;
+}
+
+.newsletter p{
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.newsletter label{
+	position: relative;
+	/*width: 100%;*/
+
+}
+
+.newsletter input{
+	padding: 20px;
+	width: 100%;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	font-family: sans-serif;
+
+}
+
+.newsletter button{
+	position: absolute;
+	right: 0;
+	padding: 20px;
+	width: 30%;
+	background: #e74c3c;
+	color: #fff;
+	border: none;
+	outline: none;
+	/*font-size: 10px;*/
+	border-radius: 0 8px 8px 0;
+	overflow: hidden;
+}
+
+.f-contact{
+	color: #fff;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3em;
+	border-bottom:1px solid rgba(255, 255, 255, 0.5);
+}
+
+.f-contact>div{
+	flex-basis: 20%;
+}
+
+.f-contact p{
+	line-height: 2em;
+	font-size: 20px;
+	color:gray;
+	cursor: pointer;
+}
+
+.f-contact p:hover{
+	color: #fff;
+}
+
+.f-contact i{
+	background: #fff;
+	color: black;
+	padding: 10px;
+	font-size: 16px;
+	margin: 20px 5px;
+	border-radius: 50%;
+	transition: .4s ease;
+}
+
+.f-contact i:hover{
+ background: transparent;
+ color: #fff;
+ border: 1px solid #fff;
+}
+
+
+
+@media (max-width:770px){
+	.menu{
+		background: black;
+		display:block;
+		line-height:30px;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		left:190%;
+		text-align: center;
+		height: 100vh;
+		padding:30% 0;
+		/*z-index: -1;*/
+		
+	}
+	.menu a{
+		margin:15px auto;
+		width: 60%;
+		color:#fff;
+		display: block;
+		border-radius: 8px;
+
+		
+	}
+	.menu a:hover{
+		background:#fff;
+	}
+     
+
+.logo{
+	
+	font-size: 1.8em;
+}
+
+
+.icon i{
+	font-size: 15px;
+}
+
+.icon a{
+	margin-left:15px;
+}
+
+	.m-menu{
+		display: block;
+		z-index: 1;
+		color: #fff;
+	}
+	nav{
+		padding:0 20px;
+	}
+
+	.h-text{
+   width: 100%;
+	}
+	.h-text h1{
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+.filter-gallery{
+	padding: 10px;
+}
+
+.portfolio-menu ul li{
+	
+	padding: 10px 10px;
+	
+}
+
+
+.portfolio-item .item{
+	width: 100%;
+	height:100%;
+	margin-bottom: 20px;
+	margin-right: 20px;
+
+
+}
+
+
+footer{
+	padding: 50px 10px;
+}
+
+
+.newsletter{
+	display:block;
+	padding: 15px;
+	border: 1px solid rgba(255, 255, 255, .2);
+	color: #fff;
+}
+
+
+.newsletter h2{
+	font-size: 1.5em;
+	
+}
+
+.newsletter p{
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+
+.newsletter input{
+	margin:15px 0;
+
+}
+
+.newsletter button{
+	margin:15px 0;
+	
+}
+
+
+.member{
+	width: 100%;
+	padding: 20px 10px;
+	
+}
+
+
+.member-card{
+	
+	padding-top:20px ;
+	width: 90%;
+	
+}
+
+.member-card .brand{
+	width: 70px;
+}
+
+
+.f-contact{
+	
+	display: block;
+	margin:1.3em;
+
+}
+
+
+.f-contact p{
+	
+	font-size:15px;
+	
+}
+
+}
